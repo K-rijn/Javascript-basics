@@ -55,7 +55,22 @@ const monitorColor = "red";
 // const monitorColor = "red" geeft "Kritieke hartslag, actie vereist!" in de terminal
 // const monitorColor = "green" geeft "Hartslag stabiel" in de terminal
 // etc.
-
+switch (monitorColor) {
+    case "green":
+        console.log("Hartslag stabiel");
+        break;
+    case "yellow":
+        console.log("Hartslag verhoogd");
+        break;
+    case "orange":
+        console.log("Kritieke hartslag, actie vereist!");
+        break;
+    case "red":
+        console.log("Kritieke hartslag, actie vereist!");
+        break;
+    default:
+        console.log("Status onbekend")
+}
 
 
 // ==========================================
